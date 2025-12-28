@@ -2,13 +2,12 @@
 <html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title></title>
+        <title>仓鼠滚筒</title>
         <link rel="preconnect" href="http://fonts.googleapis.com" />
         <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght"
+            href="https://fonts.googleapis.com/css2?family=Mona+Sans:wght@200..900&display=swap"
             rel="stylesheet"
-       
             />
     </head>
     <body>
@@ -41,12 +40,12 @@
                 font-weight: 800;
                 font-style: normal;
                 font-variation-settings: "width" 100;
-                text-align: center
+                text-align: center;
                 align-content: center;
                 min-height: 90vh;
             }
              a {
-                text-shadow: 0 35px 0;
+                text-shadow: 0 35px 0 #000;
                 color: #000;
                 font-size: 30px;
                 text-transform: uppercase;
@@ -54,12 +53,11 @@
                 text-decoration: none;
                 overflow: hidden;
 
-            span{
+            a span{
                 position: relative;
                 display: inline-block;
             }
-            &:hover{
-                span{
+            a:hover span{
                     animation: up 0.5s forwards;
                     animation-delay: calc(sibling-index() * 0.1s);
                 }
@@ -74,7 +72,7 @@
             .app {
                 display: flex;
                 flex-direction: column;
-                alighn-items: center;
+                align-items: center;
                 justify-content: center;
             }
             </style>
