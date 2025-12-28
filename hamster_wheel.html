@@ -11,7 +11,7 @@
             />
     </head>
     <body>
-        <div class="app">
+        <div class="app" style="display: flex; flex-direction: column; gap: 20px">
             <a href="#">
                 <span>T</span>
                 <span>i</span>
@@ -58,6 +58,8 @@
         <style>
             body {
                 background: #fabf47;
+            }
+            body {
                 font-family: "Mona Sans", sans-serif;
                 font-optical-sizing: auto;
                 font-weight: 800;
@@ -92,7 +94,7 @@
                 }
             @keyframes up {
                 100% {
-                    transform: translateY(-100%);
+                    translate: 0 -90%;
                 }
             }
             .app {
