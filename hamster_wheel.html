@@ -3,8 +3,8 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>仓鼠滚筒</title>
-        <link rel="preconnect" href="http://fonts.googleapis.com" />
-        <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Mona+Sans:wght@200..900&display=swap"
             rel="stylesheet"
@@ -12,7 +12,7 @@
     </head>
     <body>
         <div class="app">
-            <a>
+            <a href="#">
                 <span>T</span>
                 <span>i</span>
                 <span>k</span>
@@ -20,7 +20,7 @@
                 <span>o</span>
                 <span>k</span>
             </a>
-            <a>
+            <a href="#">
                 <span>I</span>
                 <span>n</span>
                 <span>s</span>
@@ -31,7 +31,7 @@
                 <span>a</span>
                 <span>m</span>
             </a>
-            <a>
+            <a href="#">
                 <span>Y</span>
                 <span>o</span>
                 <span>u</span>
@@ -48,19 +48,16 @@
                 <span>c</span>
                 <span>h</span>
             </a>
-
-            
-            
-            <a>TikTok</a>
-            <a>Instagram</a>
-            <a>YouTube</a>
-            <a>Twitch</a>
+           
+           
+            <a href="#">TikTok</a>
+            <a href="#">Instagram</a>
+            <a href="#">YouTube</a>
+            <a href="#">Twitch</a>
         </div>
         <style>
             body {
                 background: #fabf47;
-            }
-            body {
                 font-family: "Mona Sans", sans-serif;
                 font-optical-sizing: auto;
                 font-weight: 800;
@@ -78,7 +75,9 @@
                 font-weight: 900;
                 text-decoration: none;
                 overflow: hidden;
-
+                display: block;
+                margin: 10px 0;
+            }
             a span{
                 position: relative;
                 display: inline-block;
@@ -87,12 +86,9 @@
                     animation: up 0.5s forwards;
                     animation-delay: calc(sibling-index() * 0.1s);
                 }
-            }
-        }
-
-            @keyframe up {
+            @keyframes up {
                 100% {
-                    translate: 0 -80%;
+                    transform: translateY(-100%);
                 }
             }
             .app {
