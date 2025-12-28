@@ -68,13 +68,17 @@
                 min-height: 90vh;
             }
              a {
-                text-shadow: 0 35px 0 #000;
+                text-shadow: 0 27px 0 #000;
                 color: #000;
                 font-size: 30px;
                 text-transform: uppercase;
                 font-weight: 900;
                 text-decoration: none;
                 overflow: hidden;
+                line-height: 1;
+
+                text-box-trim: both:
+                text-box-edge: cap alphabetic;
                 display: block;
                 margin: 10px 0;
             }
@@ -83,7 +87,7 @@
                 display: inline-block;
             }
             a:hover span{
-                    animation: up 0.5s forwards;
+                    animation: up 0.3s forwards;
                     animation-delay: calc(sibling-index() * 0.1s);
                 }
             @keyframes up {
